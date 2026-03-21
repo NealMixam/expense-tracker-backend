@@ -1,8 +1,8 @@
 import { Router, Request, Response } from 'express';
-import pool from '../db';
+import pool from '../db.js';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import authMiddleware, { AuthRequest } from '../middleware/authMiddleware';
+import authMiddleware, { AuthRequest } from '../middleware/authMiddleware.js';
 
 const router = Router();
 
